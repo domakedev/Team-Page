@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  height: 61px;
+}
+
+main {
+  width: 90%;
+  max-width: 940px;
+  flex-grow: 1;
+  gap: 40px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px auto;
+}
+
+.main__textcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+
+  width: 100%;
+}
+
+.main__title {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.main__subtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 27px;
+
+  text-transform: uppercase;
+}
+
+.main__description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 21px;
+
+  max-width: 333px;
+
+  margin-top: 10px;
+}
+
+.main__cards {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  height: 300px;
+
+  display: flex;
+}
+
+.card__interno {
+  width: 156px;
+  height: 237px;
+
+  position: relative;
+}
+
+.card__interno img {
+  width: 139px;
+  height: 209px;
+}
+
+.card__90text {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 13px;
+  text-transform: uppercase;
+
+  transform: rotate(90deg);
+
+  position: absolute;
+  right: -40px;
+  top: 46px;
+  width: 100px;
+}
+
+.card__interno--par {
+  align-self: flex-end;
+}
+
+.card__name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 21px;
+  padding-top: 10px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding-bottom: 20px;
+}
+
+.footer__text {
+  display: inline-block;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  color: #bdbdbd;
+}
+
+.footer__text--special {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+@media screen and (min-width: 582px) {
+  .card {
+    width: 30%;
+
+    justify-content: center;
+  }
+
+  .main__textcontent {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 38px;
+
+    width: 100%;
+  }
+
+
+  .ext__up {
+    align-self: flex-start;
+  }
+
+  .ext__down {
+    align-self: flex-end;
+  }
+}
